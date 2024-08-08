@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyTaxi</string>
+    <string name="mapbox_access_token">sk.eyJ1Ijoic2FoaWxjb2RlcjEiLCJhIjoiY2xoMjVhNXoyMWFxMTNkcnpwNmF6Nm5qcSJ9.tkwfbR6Pt5-a628qo9xh1g</string>
+    <!-- HomeScreen -->
+    <string name="number">95</string>
+
+    <string name="tariff">Tarif</string>
+    <string name="orders">Buyurtmalar</string>
+    <string name="rocket">Bordur</string>
+
+    <!-- Array -->
+    <string-array name="driverState">
+        <item>Band</item>
+        <item>Faol</item>
+    </string-array>
+</resources>
