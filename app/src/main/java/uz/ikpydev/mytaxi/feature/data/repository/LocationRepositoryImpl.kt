@@ -1,7 +1,6 @@
 package uz.ikpydev.mytaxi.feature.data.repository
 
 import uz.ikpydev.mytaxi.feature.data.datasource.LocationDao
-import uz.ikpydev.mytaxi.feature.data.datasource.LocationEntity
 import uz.ikpydev.mytaxi.feature.data.repository.LocationMapper.toLocationEntity
 import uz.ikpydev.mytaxi.feature.data.repository.LocationMapper.toLocationModel
 import uz.ikpydev.mytaxi.feature.domain.model.LocationModel
