@@ -1,0 +1,58 @@
+[versions]
+agp = "8.5.1"
+kotlin = "2.0.20-RC"
+coreKtxLib = "1.13.1"
+junitLib = "4.13.2"
+androidxJunit = "1.2.1"
+espressoCoreLib = "3.6.1"
+coroutinesPlayServices = "1.7.3"
+lifecycleRuntime = "2.8.4"
+composeActivity = "1.9.1"
+bomCompose = "2024.06.00"
+mapboxCompose = "11.5.1"
+constraintlayoutCompose = "1.0.1"
+
+composeNavigation = "2.8.0-beta06"
+serializationJson = "1.6.3"
+hilt = "2.51.1"
+hiltNavigationCompose = "1.2.0"
+flowPermissions = "1.2.0"
+locationServices = "21.3.0"
+roomLibrary = "2.6.1"
+
+[libraries]
+mapboxAndroid = { module = "com.mapbox.maps:android", version.ref = "mapboxCompose" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtxLib" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomLibrary" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomLibrary" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomLibrary" }
+junit = { group = "junit", name = "junit", version.ref = "junitLib" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCoreLib" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntime" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "composeActivity" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "bomCompose" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayoutCompose" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutinesPlayServices" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltNavigationCompose" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+maps-compose = { module = "com.mapbox.extension:maps-compose", version.ref = "mapboxCompose" }
+permission-flow-compose = { module = "dev.shreyaspatil.permission-flow:permission-flow-compose", version.ref = "flowPermissions" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "locationServices" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinSerializationPlugin = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+composeCompilerPlugin = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
